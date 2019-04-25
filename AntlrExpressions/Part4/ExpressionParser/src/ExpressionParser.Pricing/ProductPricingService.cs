@@ -30,6 +30,7 @@ namespace ExpressionParser.Pricing
             {
                 try
                 {
+                    // todo no need to have nested subscriptions here.
                     var disposable = new CompositeDisposable();
                     var productStream =
                         _productRepository.GetProduct(product)

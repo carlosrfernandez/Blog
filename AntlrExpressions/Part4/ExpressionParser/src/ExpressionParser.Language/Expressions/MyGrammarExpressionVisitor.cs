@@ -60,7 +60,6 @@ namespace ExpressionParser.Language.Expressions
 
         public override Func<IReadOnlyList<IGrammarTerm>, decimal> VisitFxRateFunc(MyGrammarParser.FxRateFuncContext context)
         {
-            // todo test this
             var termId = context.GetText();
             var currencyPair = context.currencyPair().GetText();
             var term = new FxRateTerm(termId, CurrencyPairIdentifier.ParseExact(currencyPair));
