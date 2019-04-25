@@ -11,7 +11,6 @@ namespace ExpressionParser.Language.Expressions
         private readonly List<IObservable<IGrammarTerm>> _terms = new List<IObservable<IGrammarTerm>>();
         private readonly IUnitConverter _unitConverter;
         
-        // TODO use a container for this type of thing.
         private readonly IFxRateRepository _fxRateRepository;
 
         public MyTermVisitor(IUnitConverter unitConverter, IFxRateRepository fxRateRepository)
